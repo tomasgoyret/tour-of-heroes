@@ -4,7 +4,7 @@
 
 <ul class="heroes">
     <li *ngFor="let hero of heroes">
-        <button type="button" (click)="onSelected(hero)">
+        <button [class.selected]="hero === selectedHero" type="button" (click)="onSelected(hero)">
             <span class="badge">{{hero.id}}</span>
             <span class="name">{{hero.name}}</span>
         </button>
@@ -20,14 +20,4 @@
         <input id="name" [(ngModel)]="selectedHero.name" placeholder="name">
     </div>
 </div>
-<!-- 
-<div>
-    <label for="name"> Heroe name: </label>
-    <input id="name" [(ngModel)]="heroes.name" placeholder="name">
-</div>
 
-<h2>{{heroes.name | uppercase}}  Details</h2>
-
-
-<div><span>id : {{heroes.id}}</span></div>
-<div><span>name : {{heroes.name}}</span></div> -->
