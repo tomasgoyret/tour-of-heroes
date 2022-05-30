@@ -52,3 +52,16 @@
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
+
+.list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.delete {
+  color: white;
+  background-color: firebrick;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
+}
